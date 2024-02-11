@@ -9,6 +9,7 @@ import { PrismaService } from './prisma.service';
 import { CannabisModule } from './cannabis/cannabis.module';
 import { Cannabis } from './cannabis/entities/cannabis.entity';
 
+
 @Module({
   imports: [
     ConfigModule.forRoot({

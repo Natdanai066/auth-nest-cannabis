@@ -47,24 +47,4 @@ export class UserService {
       },
     });
   }
-  async remove(userId: number) {
-    // แก้ชื่อตัวแปรเป็น userId
-    // ตรวจสอบว่ามีข้อมูลผู้ใช้งานในระบบหรือไม่
-    const user = await this.prisma.user.findUnique({
-      where: {
-        id: userId,
-      },
-    });
-    // ถ้าไม่มีข้อมูลผู้ใช้งานในระบบ ให้ throw NotFoundException
-    if (!user) {
-      throw new NotFoundException(`User with ID ${userId} not found`);
-    }
-    // ถ้ามีข้อมูลผู้ใช้งานในระบบ ให้ลบข้อมูลผู้ใช้งาน
-    return await this.prisma.user.delete({
-      where: {
-        id: userId,
-      },
-    });
-  }
 }
-
