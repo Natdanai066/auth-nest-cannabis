@@ -27,11 +27,11 @@ export class AuthService {
       backendTokens: {
         accessToken: await this.jwtService.signAsync(payload, {
           expiresIn: '20s',
-          secret: process.env.jwtSecretKey,
+          secret: 'HgYdLksz3WMSgWh0CF31z9daZuxK10SK7n94ER9ZtPGRTfCYQO/c/B+jHFVkTp0jmw5ffYktfF97iSF1IidW5w==',
         }),
         refreshToken: await this.jwtService.signAsync(payload, {
           expiresIn: '7d',
-          secret: process.env.jwtRefreshTokenKey,
+          secret: 'b0Sc5QyQVdC3CQkQsuwGjb8ak9xlKG2qIQJvRBV9RJrO43KsDQ7sruXPW3XWpuMtM+vzG18DXtsPt6LLfJcPIw==',
         }),
         expiresIn: new Date().setTime(new Date().getTime() + EXPIRE_TIME),
       },
