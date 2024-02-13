@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://uy3vg9be4tcnbaee:rmAsO5LYWMpbbWPXOchc@b3kvgg1rk1actvrczzpx-mysql.services.clever-cloud.com:3306/b3kvgg1rk1actvrczzpx"
 }
 
 
