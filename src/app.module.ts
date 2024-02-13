@@ -20,7 +20,7 @@ import { Cannabis } from './cannabis/entities/cannabis.entity';
       host: 'b3kvgg1rk1actvrczzpx-mysql.services.clever-cloud.com',
       port: 3306,
       username: 'uy3vg9be4tcnbaee',
-      password: 'wST5ZIL0C1opX0KHDRyY',
+      password: '1W9hp9WOG3FFqGG6GmA3',
       database: 'b3kvgg1rk1actvrczzpx',
       entities: [Cannabis],
       synchronize: true, // เซ็ตเป็น true ในการสร้างตารางของฐานข้อมูลโดยอัตโนมัติ
