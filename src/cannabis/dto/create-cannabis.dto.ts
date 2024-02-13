@@ -8,4 +8,6 @@ export class CreateCannabisDto {
   detail: string;
 
   image: string;
+
+  embed: string;
 }
