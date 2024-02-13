@@ -16,4 +16,7 @@ export class Cannabis {
 
   @Column()
   image: string;
+
+  @Column()
+  embed: string;
 }
